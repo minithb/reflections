@@ -28,13 +28,13 @@ files in one commit, while others, like Google Docs, treat each file separately?
 How can you use the commands git log and git diff to view the history of files?
 
     git log gives history about different versions of file along with their comit id
-    git diff gives differnce between two comit to 
+    git diff gives differnce between two commit 
 
 How might using version control make you more confident to make changes that
 could break something?
 
-    this is amazing stuff..no need to remember much about changes made..just needs to be precise with commit..just make changes..if its good..fine..else theres always option to checkout
+    this is amazing stuff..no need to remember much about changes made..just needs to be precise with commit..just make changes..if its good..fine..else there's always option to checkout.
 
 Now that you have your workspace set up, what do you want to try using Git for?
 
-    Fill in your answer here
+    I want to try Git to store my Machine Learning Nanodegree Projects and also file of this course.

@@ -1,18 +1,39 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+Ans.: After we initial a repository using command git init, a hidden folder .git is created which stores metadata of the repository. Metadata means changes made in each file in particular commit, details about commit history etc. Initially, there are no commit on repository, first commit is done by us. If we dont do this, we won't be able to use git on directory.
+
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+
+Ans.: Staging Area is helpful to stage changes which had worked, but we aren't confident to commit them. After staging changes to staging area, we can go back to working directory, try some other ways may memory efficient or faster methods relative to the change that we have staged. Once we are finished experimenting changes to working directory, and staging changes to staging area which has worked for us, we can then commit the changes to the repository or we can also remove the changes done to staging area or working directory. So, Staging Area is a very powerful tool to do try out new feature or ways to accomplish to particular task.  
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+Ans.: After working on our desired logical change in working area, we stage it to staging area. Using git diff, we can see our logical change as difference between staging area and working directory. So, once we confirmed that the changes made is the desired logical change. Then, We can commit the changes. Thus, Staging Area helps us ensure that commit are done as per our desired logical change.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Ans.: If we want to try italian version of my project or we want to experiment new feature, we can branch-out from the master(official version or working version) branch to accomplish experiment. If our experiment doesn't workout, we can delete the branch OR If our experiment works out and has reached released stage, we can merge it with our master branch. Thus, Branching makes development more precise and rapid. 
+
 How do the diagrams help you visualize the branch structure?
+
+Ans.: Branch Structure helps us make sure that no commit is unreached. Also, we can trace path to particular commit, which branch to checkout to reach a particular commit. It also helps us visualize merging of branch and dividing of a branch. Branch Structure helps us find parent of a particular commit. 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+Ans.: Merging two branches results in a new commit having the branch which was checked out while merging. Thus, the resulting commit has two parents. We represent it in diagram to visualize the merge. To represent which branch is updated to the merge commit. And the commit history that can be tracked from the merge commit.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Ans.: Automatic Merging
+	Pros: Automatically adds & deletes lines during merging. Super fast merging.
+	Cons.: Automatic Merging might remove the desired part of changes in same region on merging. Like line A there in Orginial file and Tim's file. But not there in John's file. Then, it will remove line A in merge. But, If John is senior developer and decides to keep line A. Then, merging won't give desired result.
+	
+	Merging Manually:
+	Pros.: Merging Manually helps in resolving conflicts while merging. If there's a line B in original file, Tim changes it to B' and John changes it B''.
+	This could be helpful to decide addition or deletion of B, B' and B'' in merge file.
+	Cons.: In above exmaple, if Tim is merging and comes across conflict, he won't be able to finish merging unless he asks John(Senior Developer) to decide between B, B' and B''. Thus, could delay merging.
