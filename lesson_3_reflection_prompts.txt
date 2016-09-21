@@ -1,10 +1,10 @@
 When would you want to use a remote repository rather than keeping all your work local?
 
-Ans.: Using Remote repository helps when collaborating with other users. If a team member does some important and useful changes to repository on GitHub. We too get those changes by just pulling the changes in our remote repository. And if we have done some important and useful changes to our remote repository and if we want to share with our team, we can do so by just pushing changes to repository on GitHub. So, using Remote Repository helps a lot when working in team.
+Ans.: Using Remote repository helps when collaborating with other users. If a team member does some important and useful changes to remote repository on GitHub. We too get those changes by just pulling the changes in our local repository. And if we have done some important and useful changes to our local repository and if we want to share with our team, we can do so by just pushing changes to remote repository on GitHub. So, using Remote Repository helps a lot when working in team.
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
-Ans.: If we go in depth of push and pull actions, they are basically merging i.e merging of remote repository and repository on Hub. And Merging can cause conflicts. Thus, If I am working on a new-feature in my remote repository or working on a bug, and If Git automatically pull changes, then I might lose the changes I was working on. 
+Ans.: If we go in depth of push and pull actions, they are basically merging i.e merging of local repository and remote repository on Hub. And Merging can cause conflicts. Thus, If I am working on a new-feature in my local repository or working on a bug, and If Git automatically pull changes, then I might lose the changes I was working on.
 
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
@@ -12,6 +12,10 @@ Ans.: Branches, Clones and Forks all adhere to basic principle of preserving the
 
 Branches: Like, When we want to try new-feature within the repository, we go for branches, instead of fork or clone. we will create new branch(Original Version/working version/master branch is preserved when we make new branch), add my new-feature, if the feature works out, we merge it with master. So, this is Branching.
 
-Clones: When we want to try new-feature remotely or on local computer, we create a clone of repository on local computer either of repository on GitHub server or repository on local computer itself. We can add new feature to our cloned repository. If new feature works out, we need can push changes to repository on GitHub server. So, this is Cloning.
+Clones: When we want to try new-feature on local computer, we create a clone of repository on local computer either of repository on GitHub server or repository on local computer itself. We can add new feature to our cloned repository. If new feature works out, we need can push changes to repository on GitHub server. So, this is Cloning.
 
 Forks: When we want to try new-feature on someone else's repository GitHub server. Firstly, we need to fork that repository to our account on GitHub. Forking is similar to cloning, only difference is that it happens on GitHub server only. Forked repository has reference to repository it is forked from. Thus, trying out new-feature on forked repository won't affect original repository. So, this is Forking.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+Ans.: We can check the changes made locally by using command: git diff master origin/master. One most important benefit of having copy of the last known state of the remote stored locally helps Git in performing Fast Foward Merges wherein merge commits don't take place. If git hadn't known the last state locally, it could have made pushing and pulling changes a cumbersome task for Git.
