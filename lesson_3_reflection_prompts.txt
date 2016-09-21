@@ -5,3 +5,13 @@ Ans.: Using Remote repository helps when collaborating with other users. If a te
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
 Ans.: If we go in depth of push and pull actions, they are basically merging i.e merging of remote repository and repository on Hub. And Merging can cause conflicts. Thus, If I am working on a new-feature in my remote repository or working on a bug, and If Git automatically pull changes, then I might lose the changes I was working on. 
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Ans.: Branches, Clones and Forks all adhere to basic principle of preserving the original version/working version/master branch of repository before trying a new feature. WHERE or HOW we are trying out new feature decides whether its branching, cloning or forking.
+
+Branches: Like, When we want to try new-feature within the repository, we go for branches, instead of fork or clone. we will create new branch(Original Version/working version/master branch is preserved when we make new branch), add my new-feature, if the feature works out, we merge it with master. So, this is Branching.
+
+Clones: When we want to try new-feature remotely or on local computer, we create a clone of repository on local computer either of repository on GitHub server or repository on local computer itself. We can add new feature to our cloned repository. If new feature works out, we need can push changes to repository on GitHub server. So, this is Cloning.
+
+Forks: When we want to try new-feature on someone else's repository GitHub server. Firstly, we need to fork that repository to our account on GitHub. Forking is similar to cloning, only difference is that it happens on GitHub server only. Forked repository has reference to repository it is forked from. Thus, trying out new-feature on forked repository won't affect original repository. So, this is Forking.
